@@ -1,0 +1,71 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.example.myapplication"
+        minSdkVersion 26
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
+    implementation group: 'com.sun.xml.bind', name: 'jaxb-core', version: '2.3.0.1'
+    implementation group: 'com.sun.xml.bind', name: 'jaxb-impl', version: '2.3.1'
+    implementation group: 'javax.annotation', name: 'javax.annotation-api', version: '1.3.1'
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.21'
+    implementation group: 'org.kohsuke', name: 'github-api', version: '1.99'
+    implementation group: 'args4j', name: 'args4j', version: '2.33'
+    implementation group: 'org.jdesktop.bsaf', name: 'bsaf', version: '1.9.2'
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.21'
+    implementation group: 'net.jcip', name: 'jcip-annotations', version: '1.0'
+    implementation group: 'org.bushe', name: 'eventbus', version: '1.4'
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.1.7'
+    implementation group: 'com.jgoodies', name: 'jgoodies-forms', version: '1.9.0'
+    implementation group: 'com.jgoodies', name: 'jgoodies-looks', version: '2.7.0'
+//    implementation group: 'javax.media', name: 'jai-core', version: '1.1.3'
+    implementation group: 'net.imagej', name: 'ij', version: '1.51f'
+    implementation group: 'de.intarsys.opensource', name: 'jPodRenderer', version: '5.6'
+    implementation group: 'org.audiveris', name: 'proxymusic', version: '3.0.1'
+    implementation group: 'org.jgrapht', name: 'jgrapht-core', version: '1.0.1'
+    implementation group: 'org.jfree', name: 'jfreechart', version: '1.0.19'
+    implementation group: 'com.itextpdf', name: 'itextpdf', version: '5.5.9'
+    implementation group: 'gov.nist.math', name: 'jama', version: '1.0.3'
+    implementation group: 'org.reflections', name: 'reflections', version: '0.9.12'
+//    implementation group: 'org.bytedeco', name: 'javacpp', version: jcppVersion
+//    implementation group: 'org.bytedeco.javacpp-presets', name: 'leptonica', version: "${leptVersion}-${jcppVersion}"
+//    implementation group: 'org.bytedeco.javacpp-presets', name: 'tesseract', version: "${tessVersion}-${jcppVersion}"
+    implementation group: 'com.github.jai-imageio', name: 'jai-imageio-core', version: '1.3.1'
+    implementation group: 'org.apache.directory.studio', name: 'org.apache.commons.io', version: '2.4'
+
+
+
+
+}
